@@ -27,5 +27,5 @@ jobs:
             "NODE_VERSION=14.17.6"
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}:latest
-            docker.pkg.github.com/${{ github.repository }}:${{ github.sha }}
+            docker.pkg.github.com/${{ github.repository }}/latest
+            docker.pkg.github.com/${{ github.repository }}/${{ github.sha }}
