@@ -5,3 +5,5 @@ setup:
 start:
 	docker-compose up --build -d
 	docker exec -it serverless /bin/bash
+stop:
+	docker-compose down
