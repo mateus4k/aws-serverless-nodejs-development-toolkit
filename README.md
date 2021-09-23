@@ -1,18 +1,14 @@
-# Serverless + Aws + NodeJs development environment
+# Aws + Serverless + NodeJs development environment
 
-[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-[![Build Status](https://github.com/serverless/serverless/workflows/Integrate/badge.svg)](https://github.com/serverless/serverless/actions?query=workflow%3AIntegrate)
+## Stack
+
+- [Ubuntu](https://hub.docker.com/_/ubuntu)
+- [NodeJs](https://nodejs.org/en/) + [Npm](https://www.npmjs.com/) (using [nvm](https://github.com/nvm-sh/nvm))
+- [Serverless framework](https://www.serverless.com/)
+- [AWS Cli](https://aws.amazon.com/cli/)
 
 ## Usage
 
-Setup:
-
-```bash
-make setup
-```
-
-Run:
-
-```bash
-make start
-```
+1. Create environment variables files with `make setup` and then edit `.env`
+2. Run container: `make start`
+3. Check credentials: `aws s3 ls`
