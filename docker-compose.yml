@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        UBUNTU_VERSION: ${UBUNTU_VERSION}
+        NODE_VERSION: ${NODE_VERSION}
+    container_name: serverless
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+
