@@ -9,6 +9,8 @@
 
 ## Usage
 
-1. Create environment variables files with `make setup` and then edit `.env`
-2. Run container: `make start`
-3. Check credentials: `aws s3 ls`
+1. Clone this project
+2. Create environment variables files with `make setup` and then edit `.env`
+3. Run container: `make start`
+4. Check credentials: `aws s3 ls`
+5. Start you serverless app: `serverless`
