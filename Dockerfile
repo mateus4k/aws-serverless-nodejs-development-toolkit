@@ -10,7 +10,7 @@ ENV NVM_DIR /root/.nvm
 ARG NODE_VERSION
 ENV NODE_VERSION=${NODE_VERSION}
 
-RUN curl -sS -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | /bin/bash \
+RUN curl -sS -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | /bin/bash \
     && . $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION 1> /dev/null \
     && npm -g config set user root \
